@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./LoginPage.module.css";
 import { Title } from "../../components/Title/Title";
 import { MyProfilePage } from "../MyProfilePage/MyProfilePage";
+import { MyRecipesPage } from "../MyRecipesPage/MyRecipesPage";
 
 export const LoginPage = () => {
   return (
@@ -48,6 +49,7 @@ export const LoginPage = () => {
           </form>
         </div>
         <MyProfilePage />
+        <MyRecipesPage />
       </div>
     </>
   );

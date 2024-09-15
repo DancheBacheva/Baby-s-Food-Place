@@ -1,0 +1,27 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer h1 {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-36) / var(--unnamed-line-spacing-48)
+    var(--unnamed-font-family-roboto-slab);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--green);
+  text-align: left;
+  font: normal normal bold 36px/48px Roboto Slab;
+  letter-spacing: 0px;
+  color: #96bb36;
+  opacity: 1;
+  padding-left: 90px;
+}
+
+.mainContainer hr {
+  width: 65%;
+  max-width: 100%;
+  border: 1px solid var(--lightgrey);
+  opacity: 1;
+}

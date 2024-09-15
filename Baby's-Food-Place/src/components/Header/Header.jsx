@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <>
       <div className={styles.headerContainer}>
         <div className={styles.logoContainer}>
-          <img src="logo.png" alt="" />
+          <Link to="/">
+            <img src="logo.png" alt="" />
+          </Link>
         </div>
         <div className={styles.middleContainer}>
           <p>
@@ -21,7 +24,9 @@ export const Header = () => {
           <p>DINNER</p>
         </div>
         <div className={styles.rightContainer}>
-          <button className={styles.btnLogin}>LOG IN</button>
+          <Link to="/login">
+            <button className={styles.btnLogin}>LOG IN</button>
+          </Link>
           <p>or</p>
           <button className={styles.btnCreateAccount}>CREATE ACCOUNT</button>
         </div>

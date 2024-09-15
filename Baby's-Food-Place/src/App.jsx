@@ -1,16 +1,18 @@
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import { FreshAndNew } from "./components/Fresh&New/FreshAndNew";
 import { Header } from "./components/Header/Header";
-import { Title } from "./components/Title/Title";
+import { LoginPage } from "./pages/LoginPage/LoginPage";
+import { MainPage } from "./pages/MainPage/MainPage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
-      <Title title="Fresh & New" />
-      <FreshAndNew />
-      <Title title="Most Popular Recipes" />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
       <Footer />
     </>
   );

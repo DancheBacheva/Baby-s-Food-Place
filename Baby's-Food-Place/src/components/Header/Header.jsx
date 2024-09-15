@@ -28,7 +28,9 @@ export const Header = () => {
             <button className={styles.btnLogin}>LOG IN</button>
           </Link>
           <p>or</p>
-          <button className={styles.btnCreateAccount}>CREATE ACCOUNT</button>
+          <Link to="/createAccount">
+            <button className={styles.btnCreateAccount}>CREATE ACCOUNT</button>
+          </Link>
         </div>
       </div>
     </>

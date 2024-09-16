@@ -7,7 +7,7 @@ export const FreshAndNew = () => {
       <div className={styles.mainContainer}>
         <div className={styles.card}>
           <div className={styles.cardUp}>
-            <img src="hommadePizza.png" alt="" />
+            <img src="homemadePizza.png" alt="" />
             <div className={styles.foodCategory}>breakfast</div>
           </div>
           <div className={styles.cardDown}>

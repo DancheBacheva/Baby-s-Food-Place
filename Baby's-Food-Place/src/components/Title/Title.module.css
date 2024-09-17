@@ -17,11 +17,13 @@
   color: #96bb36;
   opacity: 1;
   padding-left: 90px;
+  flex-shrink: 0;
 }
 
 .mainContainer hr {
-  width: 65%;
-  max-width: 100%;
+  flex-grow: 1;
   border: 1px solid var(--lightgrey);
   opacity: 1;
+  margin-right: 80px;
+  margin-left: 20px;
 }

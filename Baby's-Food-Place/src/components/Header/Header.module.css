@@ -9,7 +9,6 @@
 }
 
 .logoContainer {
-  width: 20%;
   height: 150px;
   display: flex;
   align-items: center;
@@ -18,14 +17,14 @@
 .logoContainer img {
 }
 
-.middleContainer {
-  width: 50%;
+.middleContainer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style-type: none;
 }
 
-.middleContainer p {
+.middleContainer li {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
     var(--unnamed-font-size-18) / var(--unnamed-line-spacing-24)
     var(--unnamed-font-family-roboto);
@@ -38,6 +37,7 @@
   text-transform: uppercase;
   opacity: 1;
   padding: 0 5px;
+  display: flex;
 }
 
 .dot {
@@ -47,58 +47,6 @@
 }
 
 .rightContainer {
-  width: 30%;
   display: flex;
   flex-direction: row;
-}
-
-.rightContainer p {
-  color: var(--orange);
-  font: var(--unnamed-font-style-normal) normal 900 16px/21px
-    var(--unnamed-font-family-roboto);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--orange);
-  text-align: left;
-  font: normal normal 900 16px/21px Roboto;
-  letter-spacing: 0px;
-  color: #f0972a;
-  opacity: 1;
-  padding: 0 20px;
-}
-
-.btnLogin {
-  width: 108px;
-  height: 44px;
-  border: 1px solid var(--midgrey);
-  opacity: 1;
-  border-radius: 4px;
-  font: var(--unnamed-font-style-normal) normal 900 16px/21px
-    var(--unnamed-font-family-roboto);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--midgrey);
-  text-align: center;
-  font: normal normal 900 16px/21px Roboto;
-  letter-spacing: 0px;
-  color: #a5a5a5;
-  text-transform: uppercase;
-}
-
-.btnCreateAccount {
-  width: 179px;
-  height: 44px;
-  background: var(--green) 0% 0% no-repeat padding-box;
-  background: #96bb36 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  opacity: 1;
-  font: var(--unnamed-font-style-normal) normal 900 16px/21px
-    var(--unnamed-font-family-roboto);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--white);
-  text-align: center;
-  font: normal normal 900 16px/21px Roboto;
-  letter-spacing: 0px;
-  color: #ffffff;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 4px;
 }

@@ -1,2 +1,13 @@
 .mainContainer {
 }
+
+.addButton,
+.backButton {
+  width: 25px;
+  height: 25px;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+}

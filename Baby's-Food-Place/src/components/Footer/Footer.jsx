@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { GoDotFill } from "react-icons/go";
 
 function Footer() {
   return (
@@ -10,13 +11,22 @@ function Footer() {
         </div>
         <div className={styles.middleContainer}>
           <p>
-            BREAKFAST<span className={styles.dot}>·</span>
+            BREAKFAST
+            <span className={styles.dot}>
+              <GoDotFill />
+            </span>
           </p>
           <p>
-            BRUNCH<span className={styles.dot}>·</span>
+            BRUNCH
+            <span className={styles.dot}>
+              <GoDotFill />
+            </span>
           </p>
           <p>
-            LUNCH<span className={styles.dot}>·</span>
+            LUNCH
+            <span className={styles.dot}>
+              <GoDotFill />
+            </span>
           </p>
           <p>DINNER</p>
         </div>

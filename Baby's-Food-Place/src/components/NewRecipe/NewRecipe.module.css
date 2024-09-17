@@ -30,6 +30,7 @@
   border: 1px solid #a5a5a5;
   border-radius: 5px;
   opacity: 1;
+  margin-bottom: 20px;
 }
 
 .imageContainer button {
@@ -43,7 +44,7 @@
 }
 
 .detailsContainer {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .detailsContainer label {
@@ -66,6 +67,7 @@
   border: 1px solid #a5a5a5;
   border-radius: 5px;
   opacity: 1;
+  margin: 10px 0 20px 0;
 }
 
 .detailsContainer input::placeholder {
@@ -91,6 +93,7 @@
   color: var(--white);
   border: none;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .detailsMiddleContainer {
@@ -111,13 +114,14 @@
 }
 
 .detailsMiddleContainer input {
-  width: 179px;
+  width: 165px;
   height: 40px;
   border: 1px solid var(--midgrey);
   background: #f0efea 0% 0% no-repeat padding-box;
   border: 1px solid #a5a5a5;
   border-radius: 5px;
   opacity: 1;
+  margin-right: 28px;
 }
 
 .recipeContainer {
@@ -138,11 +142,12 @@
 }
 
 .recipeContainer input {
-  width: 282px;
+  width: 265px;
   height: 260px;
   border: 1px solid var(--midgrey);
   background: #f0efea 0% 0% no-repeat padding-box;
   border: 1px solid #a5a5a5;
   border-radius: 5px;
   opacity: 1;
+  margin-top: 10px;
 }

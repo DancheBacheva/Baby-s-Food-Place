@@ -1,0 +1,41 @@
+.rightContainer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+.dot {
+  color: var(--darkgrey);
+  margin: 0 5px;
+  padding-left: 5px;
+}
+
+.rightContainer ul li {
+  font: var(--unnamed-font-style-normal) normal 900 var(--unnamed-font-size-18) /
+    var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 900 18px/24px Roboto;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.rightContainer ul li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #b5b5b4;
+}
+
+.myrecipes {
+  color: var(--green);
+}
+
+.myprofile {
+  color: var(--orange);
+}
+
+.logout {
+  color: #b5b5b4;
+}

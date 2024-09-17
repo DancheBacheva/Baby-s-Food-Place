@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
+import { LoginHeader } from "../LoginHeader/LoginHeader";
+import { LogoutHeader } from "../LogoutHeader/LogoutHeader";
+import { GoDotFill } from "react-icons/go";
 
 export const Header = () => {
   return (
@@ -11,26 +14,32 @@ export const Header = () => {
             <img src="logo.png" alt="" />
           </Link>
         </div>
-        <div className={styles.middleContainer}>
-          <p>
-            BREAKFAST<span className={styles.dot}>·</span>
-          </p>
-          <p>
-            BRUNCH<span className={styles.dot}>·</span>
-          </p>
-          <p>
-            LUNCH<span className={styles.dot}>·</span>
-          </p>
-          <p>DINNER</p>
-        </div>
+        <nav className={styles.middleContainer}>
+          <ul>
+            <li>
+              BREAKFAST
+              <span className={styles.dot}>
+                <GoDotFill />
+              </span>
+            </li>
+            <li>
+              BRUNCH
+              <span className={styles.dot}>
+                <GoDotFill />
+              </span>
+            </li>
+            <li>
+              LUNCH
+              <span className={styles.dot}>
+                <GoDotFill />
+              </span>
+            </li>
+            <li>DINNER</li>
+          </ul>
+        </nav>
         <div className={styles.rightContainer}>
-          <Link to="/login">
-            <button className={styles.btnLogin}>LOG IN</button>
-          </Link>
-          <p>or</p>
-          <Link to="/createAccount">
-            <button className={styles.btnCreateAccount}>CREATE ACCOUNT</button>
-          </Link>
+          <LoginHeader />
+          {/* <LogoutHeader /> */}
         </div>
       </div>
     </>

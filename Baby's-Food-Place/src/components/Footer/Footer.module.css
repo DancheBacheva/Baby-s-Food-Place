@@ -30,9 +30,6 @@
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--white);
   text-align: left;
-  font: normal normal bold 15px/20px Roboto;
-  letter-spacing: 0px;
-  color: #ffffff;
   text-transform: uppercase;
   opacity: 1;
   padding: 0 5px;
@@ -57,9 +54,6 @@
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--white);
   text-align: right;
-  font: normal normal normal 14px/19px Roboto;
-  letter-spacing: 0px;
-  color: #ffffff;
   opacity: 1;
   margin: 0;
   padding: 0;

@@ -28,7 +28,6 @@ const userSchema = new mongoose.Schema({
 
   birthday: {
     type: Date,
-    required: [true, "You must enter a birthday"],
   },
 
   role: {
@@ -38,7 +37,7 @@ const userSchema = new mongoose.Schema({
 
   profilepicture: {
     type: String,
-    default: "defaultpp.png",
+    default: "avatar.jpg",
   },
 });
 

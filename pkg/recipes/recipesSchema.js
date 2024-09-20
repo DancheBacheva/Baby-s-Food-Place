@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const recipesSchema = new mongoose.Schema({
   category: {
     type: String,
-    enum: [breakfast, brunch, lunch, dinner],
+    enum: ["breakfast", "brunch", "lunch", "dinner"],
   },
 
   recipeTitle: {

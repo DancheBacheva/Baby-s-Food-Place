@@ -2,18 +2,20 @@ const User = require("../../pkg/user/userSchema");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
-exports.register = async (req, res) => {
+exports.createAccount = async (req, res) => {
   try {
     const newUser = await User.create({
-      name: req.body.name,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       email: req.body.email,
       password: req.body.password,
-      // role: req.body.role
+      birthday: req.body.borthday,
+      role: req.body.role,
+      profilepicture: req.body.profilepicture,
     });
 
     const token = jwt.sign(
-      { id: newUser._id, name: newUser.name, role: newUser.role },
-      // { id: newUser._id, name: newUser.name },
+      { id: newUser._id, email: newUser.email, role: newUser.role },
       process.env.JWT_SECRET,
       { expiresIn: process.env.JWT_EXPIRES }
     );
@@ -29,7 +31,6 @@ exports.register = async (req, res) => {
     res.status(201).json({
       status: "success",
       token,
-      // username: user.name,
     });
   } catch (err) {
     return res.status(500).send(err);
@@ -78,13 +79,4 @@ exports.login = async (req, res) => {
   } catch (err) {
     return res.status(500).send("Internal server error");
   }
-};
-
-exports.restrict = (...roles) => {
-  return (req, res, next) => {
-    if (!roles.includes(req.auth.role)) {
-      return res.status(500).send("You dont have access");
-    }
-    next();
-  };
 };

@@ -72,6 +72,13 @@ exports.viewOne = async (req, res) => {
 
 exports.create = async (req, res) => {
   try {
+    if (!req.user || !req.user.id) {
+      return res.status(401).json({
+        status: "fail",
+        message: "Unauthorized: User not authenticated.",
+      });
+    }
+
     const {
       recipeTitle,
       recipeDescription,

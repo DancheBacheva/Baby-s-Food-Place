@@ -1,4 +1,4 @@
-const Recipe = require("../../pkg/recipes/recipesSchema");
+const Recipe = require("../../../pkg/recipes/recipesSchema");
 const multer = require("multer");
 const uuid = require("uuid");
 
@@ -72,12 +72,7 @@ exports.viewOne = async (req, res) => {
 
 exports.create = async (req, res) => {
   try {
-    if (!req.user || !req.user.id) {
-      return res.status(401).json({
-        status: "fail",
-        message: "Unauthorized: User not authenticated.",
-      });
-    }
+    const userId = req.auth.id;
 
     const {
       recipeTitle,
@@ -96,7 +91,7 @@ exports.create = async (req, res) => {
       numberOfPeople,
       icon: iconRecipe,
       category,
-      author: req.user.id,
+      author: userId,
     });
 
     res.status(201).json({

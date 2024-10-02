@@ -1,10 +1,10 @@
 const express = require("express");
-const db = require("./pkg/db/index");
+const db = require("../../pkg/db/index");
 const jwt = require("express-jwt");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const authHandler = require("./handlers/authHandler/authHandler");
-const recipesHandler = require("./handlers/recipesHandler/recipesHandler");
+
+const authHandler = require("./authandler/authHandler");
 
 const app = express();
 
@@ -41,18 +41,9 @@ app.use(
 app.post("/api/v1/auth/createaccount", authHandler.createAccount);
 app.post("/api/v1/auth/login", authHandler.login);
 
-app.get("/recipes", recipesHandler.viewAll);
-app.get("/recipes/:id", recipesHandler.viewOne);
-app.post("/recipes", recipesHandler.create);
-app.patch("/recipes/:id", recipesHandler.update);
-app.delete("/recipes/:id", recipesHandler.delete);
-
-app.get("/", (req, res) => {
-  res.send("Hello, World");
-});
-
-app.listen(process.env.PORT, (err) => {
+app.listen(process.env.PORTAUTH, (err) => {
   if (err) {
     return console.log("Server can not start");
-  } else console.log(`Server is running on port ${process.env.PORT}`);
+  }
+  console.log(`Server started successfully on port ${process.env.PORTAUTH}`);
 });

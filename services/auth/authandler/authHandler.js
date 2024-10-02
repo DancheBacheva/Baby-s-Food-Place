@@ -1,4 +1,4 @@
-const User = require("../../pkg/user/userSchema");
+const User = require("../../../pkg/user/userSchema");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
@@ -61,6 +61,7 @@ exports.login = async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: process.env.JWT_EXPIRES }
     );
+    console.log("Generated Token:", token);
 
     res.cookie("jwt", token, {
       expires: new Date(

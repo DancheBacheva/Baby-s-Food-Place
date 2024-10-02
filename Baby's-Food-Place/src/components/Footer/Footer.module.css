@@ -24,7 +24,14 @@
   justify-content: center;
 }
 
-.middleContainer p {
+.middleContainer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.middleContainer li {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
     15px/20px var(--unnamed-font-family-roboto);
   letter-spacing: var(--unnamed-character-spacing-0);
@@ -33,6 +40,11 @@
   text-transform: uppercase;
   opacity: 1;
   padding: 0 5px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
 }
 
 .dot {

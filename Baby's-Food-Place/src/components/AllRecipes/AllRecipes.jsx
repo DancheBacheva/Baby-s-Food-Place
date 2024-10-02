@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./FreshAndNew.module.css";
+import styles from "./AllRecipes.module.css";
 
-export const FreshAndNew = () => {
+export const AllRecipes = () => {
   return (
     <>
       <div className={styles.mainContainer}>

@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Recipes.module.css";
+import styles from "./MyRecipes.module.css";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-export const Recipes = () => {
+export const MyRecipes = () => {
   return (
     <div>
       <table>

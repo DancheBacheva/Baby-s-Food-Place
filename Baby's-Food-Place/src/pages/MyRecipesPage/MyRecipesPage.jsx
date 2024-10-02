@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MyRecipesPage.module.css";
 import { Title } from "../../components/Title/Title";
-import { Recipes } from "../../components/Recipes/Recipes";
+import { MyRecipes } from "../../components/MyRecipes/MyRecipes";
 import { NewRecipe } from "../../components/NewRecipe/NewRecipe";
 import { TiArrowBackOutline } from "react-icons/ti";
 import { IoMdAdd } from "react-icons/io";
@@ -17,7 +17,7 @@ export const MyRecipesPage = () => {
         <button className={styles.backButton}>
           <TiArrowBackOutline />
         </button>
-        <Recipes />
+        <MyRecipes />
         <NewRecipe />
       </div>
     </>

@@ -26,6 +26,11 @@
   text-decoration-color: #b5b5b4;
 }
 
+.navLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 .myrecipes {
   color: var(--green);
 }

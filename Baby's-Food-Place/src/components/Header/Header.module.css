@@ -37,6 +37,11 @@
   display: flex;
 }
 
+.navLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 .dot {
   color: var(--orange);
   margin: 0 5px;

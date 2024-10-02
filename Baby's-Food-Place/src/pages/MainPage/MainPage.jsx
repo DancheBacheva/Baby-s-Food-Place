@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MainPage.module.css";
 import { Title } from "../../components/Title/Title";
-import { FreshAndNew } from "../../components/Fresh&New/FreshAndNew";
+import { AllRecipes } from "../../components/AllRecipes/AllRecipes";
 import { RecipeDetailView } from "../../components/RecipeDetailView/RecipeDetailView";
 
 export const MainPage = () => {
@@ -9,7 +9,7 @@ export const MainPage = () => {
     <div>
       <Title title="Fresh & New" />
       {/* <RecipeDetailView /> */}
-      <FreshAndNew />
+      <AllRecipes />
       <Title title="Most Popular Recipes" />
     </div>
   );

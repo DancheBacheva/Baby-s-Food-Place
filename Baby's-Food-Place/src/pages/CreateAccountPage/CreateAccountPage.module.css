@@ -3,13 +3,13 @@
 
 .containerCreateAccount {
   display: flex;
-  padding: 70px 0 300px 90px;
+  padding: 50px 0 90px 90px;
 }
 
 .containerCreateAccountleft {
   width: 412px;
   height: 216px;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .containerCreateAccountleft h1 {
@@ -83,4 +83,5 @@
   color: var(--white);
   border-radius: 3px;
   margin-top: 40px;
+  cursor: pointer;
 }

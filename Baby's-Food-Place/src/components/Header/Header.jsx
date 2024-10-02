@@ -17,24 +17,34 @@ export const Header = () => {
         <nav className={styles.middleContainer}>
           <ul>
             <li>
-              BREAKFAST
-              <span className={styles.dot}>
-                <GoDotFill />
-              </span>
+              <Link to="/recipes/breakfast" className={styles.navLink}>
+                BREAKFAST
+                <span className={styles.dot}>
+                  <GoDotFill />
+                </span>
+              </Link>
             </li>
             <li>
-              BRUNCH
-              <span className={styles.dot}>
-                <GoDotFill />
-              </span>
+              <Link to="/recipes/brunch" className={styles.navLink}>
+                BRUNCH
+                <span className={styles.dot}>
+                  <GoDotFill />
+                </span>
+              </Link>
             </li>
             <li>
-              LUNCH
-              <span className={styles.dot}>
-                <GoDotFill />
-              </span>
+              <Link to="/recipes/lunch" className={styles.navLink}>
+                LUNCH
+                <span className={styles.dot}>
+                  <GoDotFill />
+                </span>
+              </Link>
             </li>
-            <li>DINNER</li>
+            <li>
+              <Link to="/recipes/dinner" className={styles.navLink}>
+                DINNER
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className={styles.rightContainer}>

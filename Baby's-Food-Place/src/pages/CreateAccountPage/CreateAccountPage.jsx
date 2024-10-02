@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./CreateAccountPage.module.css";
 import { Title } from "../../components/Title/Title";
+import { Link } from "react-router-dom";
 
 export const CreateAccountPage = () => {
   return (
@@ -48,7 +49,9 @@ export const CreateAccountPage = () => {
               placeholder="******"
             />
             <br />
-            <button>CREATE ACCOUNT</button>
+            <Link to="/myprofile">
+              <button>CREATE ACCOUNT</button>
+            </Link>
           </div>
 
           <div className={styles.formRight}>

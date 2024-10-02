@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./LoginPage.module.css";
 import { Title } from "../../components/Title/Title";
-import { MyProfilePage } from "../MyProfilePage/MyProfilePage";
-import { MyRecipesPage } from "../MyRecipesPage/MyRecipesPage";
+import { Link } from "react-router-dom";
 
 export const LoginPage = () => {
   return (
@@ -45,11 +44,11 @@ export const LoginPage = () => {
             />
             <br />
 
-            <button>LOG IN</button>
+            <Link to="/myprofile">
+              <button>LOG IN</button>
+            </Link>
           </form>
         </div>
-        <MyProfilePage />
-        <MyRecipesPage />
       </div>
     </>
   );

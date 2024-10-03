@@ -1,5 +1,5 @@
 # Baby-s-Food-Place
-**Baby's Food Place** is a user-friendly recipe management app designed to help amilies discover, save, and organize their favorite meals. With the ability to create a personalized account, users can explore a variety of nutritious recipes, save their favorites, and manage their own collection. Whether adding new recipes, updating existing ones, or deleting those no longer needed, Baby's Food Place provides an intuitive platform to make mealtime easier and more organized. Perfect for families looking to share and store their go-to meals in one convenient place!
+**Baby's Food Place** is a user-friendly recipe management app designed to help families discover, save, and organize their favorite meals. With the ability to create a personalized account, users can explore a variety of nutritious recipes, save their favorites, and manage their own collection. Whether adding new recipes, updating existing ones, or deleting those no longer needed, Baby's Food Place provides an intuitive platform to make mealtime easier and more organized. Perfect for families looking to share and store their go-to meals in one convenient place!
 
 ![header](https://github.com/user-attachments/assets/78db362c-90c7-4712-92a7-d1fc3babbdfb)
 ![footer](https://github.com/user-attachments/assets/e6a18dd4-1444-476b-8296-ee0324cd88e7)

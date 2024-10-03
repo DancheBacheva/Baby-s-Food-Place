@@ -3,6 +3,7 @@ import styles from "./MainPage.module.css";
 import { Title } from "../../components/Title/Title";
 import { AllRecipes } from "../../components/AllRecipes/AllRecipes";
 import { RecipeDetailView } from "../../components/RecipeDetailView/RecipeDetailView";
+import { MostPopularRecipes } from "../../components/MostPopularRecipes/MostPopularRecipes";
 
 export const MainPage = () => {
   return (
@@ -10,7 +11,7 @@ export const MainPage = () => {
       <Title title="Fresh & New" />
       {/* <RecipeDetailView /> */}
       <AllRecipes />
-      <Title title="Most Popular Recipes" />
+      <MostPopularRecipes />
     </div>
   );
 };

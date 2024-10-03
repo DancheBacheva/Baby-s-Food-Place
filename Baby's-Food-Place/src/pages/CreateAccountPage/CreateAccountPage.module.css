@@ -3,7 +3,7 @@
 
 .containerCreateAccount {
   display: flex;
-  padding: 50px 0 90px 90px;
+  padding: 0 0 90px 90px;
 }
 
 .containerCreateAccountleft {
@@ -41,7 +41,7 @@
 
 .containerCreateAccountRight {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .formLeft {

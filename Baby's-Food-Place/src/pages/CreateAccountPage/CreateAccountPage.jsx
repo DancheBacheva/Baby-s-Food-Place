@@ -22,7 +22,7 @@ export const CreateAccountPage = () => {
         </div>
         <form className={styles.containerCreateAccountRight}>
           <div className={styles.formLeft}>
-            <label htmlFor="firstName">Email</label>
+            <label htmlFor="firstName">First Name</label>
             <br />
             <input
               type="text"

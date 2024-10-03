@@ -1,12 +1,14 @@
 import React from "react";
-import styles from "./AllRecipes.module.css";
+import styles from "./MostPopularRecipes.module.css";
 import data from "../../data/recipes.json";
+import { Title } from "../Title/Title";
 
-export const AllRecipes = () => {
+export const MostPopularRecipes = () => {
   return (
     <>
+      <Title title="Most Popular Recipes" />
       <div className={styles.mainContainer}>
-        {data.map((recipe, i) => (
+        {data.slice(6, 9).map((recipe, i) => (
           <div key={i} className={styles.card}>
             <div className={styles.cardUp}>
               <img src={recipe.recipeImage} alt="" />

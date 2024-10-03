@@ -8,7 +8,9 @@ function Footer() {
     <>
       <div className={styles.footerContainer}>
         <div className={styles.logoContainer}>
-          <img src="logo-footer.png" alt="" />
+          <Link to="/">
+            <img src="logo-footer.png" alt="" />
+          </Link>
         </div>
         <nav className={styles.middleContainer}>
           <ul>

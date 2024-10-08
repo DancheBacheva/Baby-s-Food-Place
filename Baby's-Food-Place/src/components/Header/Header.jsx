@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 import { LoginHeader } from "../LoginHeader/LoginHeader";
 import { LogoutHeader } from "../LogoutHeader/LogoutHeader";
 import { GoDotFill } from "react-icons/go";
+import { UserContext } from "../../context/UserContext";
 
 export const Header = () => {
+  const { loggedIn } = useContext(UserContext);
   return (
     <>
       <div className={styles.headerContainer}>
@@ -48,8 +50,7 @@ export const Header = () => {
           </ul>
         </nav>
         <div className={styles.rightContainer}>
-          <LoginHeader />
-          {/* <LogoutHeader /> */}
+          {loggedIn ? <LogoutHeader /> : <LoginHeader />}
         </div>
       </div>
     </>

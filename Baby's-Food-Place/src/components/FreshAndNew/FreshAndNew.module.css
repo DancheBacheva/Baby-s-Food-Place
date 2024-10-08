@@ -1,0 +1,124 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.card {
+  width: 373px;
+  height: 428px;
+  background: var(--white) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--lightgrey);
+  box-shadow: 0px 10px 20px #00000012;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.cardUp {
+  width: 373px;
+  height: 234px;
+  background-size: cover;
+  border-radius: 5px 5px 0px 0px;
+  opacity: 1;
+  position: relative;
+}
+
+.cardUp img {
+  width: 373px;
+  height: 234px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.foodCategory {
+  width: 85px;
+  height: 26px;
+  background: var(--green) 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  opacity: 1;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 17px;
+  left: 25px;
+}
+.cardDown {
+  margin: 0 25px;
+}
+
+.cardDown h4 {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-20) / var(--unnamed-line-spacing-26)
+    var(--unnamed-font-family-roboto-slab);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--orange);
+  text-align: left;
+  opacity: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cardDown p {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+    var(--unnamed-line-spacing-19) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--midgrey);
+  text-align: left;
+  opacity: 1;
+}
+
+.detailsContainer {
+  width: 318px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailsContainerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.smallContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.smallContainer img {
+  width: 16px;
+  height: 16px;
+}
+
+.smallContainer p {
+  font: normal bold 12px/16px Roboto Slab;
+  color: #626262;
+  margin: 0;
+}
+
+.detailsContainerRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.detailsContainerRight button {
+  width: 28px;
+  height: 28px;
+  background-color: #96bb36;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

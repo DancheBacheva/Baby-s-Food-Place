@@ -56,6 +56,7 @@ export const LoginPage = () => {
         });
 
         const jsonData = await res.json();
+        console.log("Login Response:", jsonData);
         if (res.ok) {
           setContextLoggedIn(true);
           setUsername(jsonData.username);
@@ -63,7 +64,7 @@ export const LoginPage = () => {
           localStorage.setItem("token", jsonData.token);
           localStorage.setItem("username", jsonData.username);
           alert(`Welcome, ${jsonData.username}!`);
-          navigate("/dashboard");
+          navigate("/");
         } else {
           alert(jsonData.message || "Login failed. Please try again.");
         }

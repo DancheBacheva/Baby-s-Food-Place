@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./LogoutHeader.module.css";
 import { GoDotFill } from "react-icons/go";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
 
 export const LogoutHeader = () => {
+  const { logout } = useContext(UserContext);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
+
   return (
     <>
       <nav className={styles.rightContainer}>
@@ -26,7 +35,7 @@ export const LogoutHeader = () => {
           </li>
 
           <li className={styles.logout}>
-            <Link to="/" className={styles.navLink}>
+            <Link to="/" className={styles.navLink} onClick={handleLogout}>
               LOGOUT
             </Link>
           </li>

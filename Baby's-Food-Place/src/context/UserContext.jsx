@@ -26,9 +26,17 @@ export const UserProvider = ({ children }) => {
     setLoggedIn(isLoggedIn);
   }, []);
 
+  const logout = () => {
+    setLoggedIn(false);
+    setUsername("");
+    localStorage.setItem("loggedIn", "false");
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+  };
+
   return (
     <UserContext.Provider
-      value={{ loggedIn, username, setLoggedIn, setUsername }}
+      value={{ loggedIn, username, setLoggedIn, setUsername, logout }}
     >
       {children}
     </UserContext.Provider>

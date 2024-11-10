@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./MyRecipes.module.css";
+import { Title } from "../Title/Title";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 export const MyRecipes = () => {
   return (
     <div>
+      <Title title="My Recipes" />
       <table>
         <thead>
           <tr>

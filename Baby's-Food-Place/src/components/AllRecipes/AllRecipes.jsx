@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./AllRecipes.module.css";
 import data from "../../data/recipes.json";
 import { useParams } from "react-router-dom";
 import { RecipeDetailView } from "../RecipeDetailView/RecipeDetailView";
 import { useRecipeModal } from "../../hooks/useRecipeModal";
+import { Title } from "../Title/Title";
 
 export const AllRecipes = () => {
   const { type } = useParams();
   const { isModalOpen, selectedRecipe, handleRecipeClick, closeModal } =
     useRecipeModal();
+
+  const formattedType =
+    type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
 
   const filteredRecipes = data.filter(
     (recipe) => recipe.category.toLowerCase() === type.toLowerCase()
@@ -16,6 +20,7 @@ export const AllRecipes = () => {
 
   return (
     <>
+      <Title title={`${formattedType} Recipes`} />
       <div className={styles.mainContainer}>
         {filteredRecipes.length > 0 ? (
           filteredRecipes.map((recipe, i) => (

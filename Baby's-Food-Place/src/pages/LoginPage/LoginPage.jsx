@@ -2,18 +2,19 @@ import { useState, useEffect, useContext } from "react";
 import styles from "./LoginPage.module.css";
 import { Title } from "../../components/Title/Title";
 import { Navigate, useNavigate } from "react-router-dom";
-import { jwtDecode } from "jwt-decode";
+import jwtDecode from "jwt-decode";
 import { UserContext } from "../../context/UserContext";
 
 export const LoginPage = () => {
-  const { setLoggedIn: setContextLoggedIn, setUsername } =
-    useContext(UserContext);
+  const {
+    setLoggedIn: setContextLoggedIn,
+    setUsername,
+    loggedIn,
+  } = useContext(UserContext);
   const initialData = { email: "", password: "" };
 
   const [data, setData] = useState(initialData);
   const [dataErrors, setDataErrors] = useState({});
-  const [decodedToken, setDecodedToken] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const navigate = useNavigate();
 
@@ -79,18 +80,13 @@ export const LoginPage = () => {
     if (token) {
       try {
         const decoded = jwtDecode(token);
-        setDecodedToken(decoded);
-        setIsLoggedIn(true);
         setUsername(localStorage.getItem("username") || "");
+        setContextLoggedIn(true);
       } catch (error) {
         console.error("Failed to decode token", error);
       }
     }
-  }, [setUsername]);
-
-  useEffect(() => {
-    setContextLoggedIn(isLoggedIn);
-  }, [isLoggedIn, setContextLoggedIn]);
+  }, [setUsername, setContextLoggedIn]);
 
   return (
     <div>
@@ -105,7 +101,7 @@ export const LoginPage = () => {
             predefined chunks as necessary...
           </p>
         </div>
-        {isLoggedIn ? (
+        {loggedIn ? (
           <Navigate to="/myprofile" />
         ) : (
           <form className={styles.containerLoginRight} onSubmit={handleLogin}>

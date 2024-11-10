@@ -13,7 +13,7 @@ export const Header = () => {
       <div className={styles.headerContainer}>
         <div className={styles.logoContainer}>
           <Link to="/">
-            <img src="logo.png" alt="" />
+            <img src="/logo.png" alt="" />
           </Link>
         </div>
         <nav className={styles.middleContainer}>

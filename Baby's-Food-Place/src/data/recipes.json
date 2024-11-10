@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "recipeTitle": "Homemade Pizza",
     "category": "lunch",
     "recipeImage": "homemadePizza.png",
@@ -9,6 +10,7 @@
     "createdOn": "10/03/2024"
   },
   {
+    "id": "2",
     "recipeTitle": "Sea Spaghetti",
     "category": "dinner",
     "recipeImage": "seaSpaghetti.png",
@@ -18,6 +20,7 @@
     "createdOn": "09/08/2024"
   },
   {
+    "id": "3",
     "recipeTitle": "Easy Tacos",
     "category": "brunch",
     "recipeImage": "easyTacos.png",
@@ -27,6 +30,7 @@
     "createdOn": "03/10/2024"
   },
   {
+    "id": "3",
     "recipeTitle": "Mac & bacon(and cheese)",
     "category": "lunch",
     "recipeImage": "macAndCheese.png",
@@ -36,6 +40,7 @@
     "createdOn": "03/10/2024"
   },
   {
+    "id": "4",
     "recipeTitle": "Veggies Lasagna",
     "category": "dinner",
     "recipeImage": "veggiesLasagna.png",
@@ -45,6 +50,7 @@
     "createdOn": "03/10/2024"
   },
   {
+    "id": "5",
     "recipeTitle": "Sweedish Meatballs",
     "category": "brunch",
     "recipeImage": "sweedishMeatballs.png",
@@ -54,6 +60,7 @@
     "createdOn": "05/10/2024"
   },
   {
+    "id": "6",
     "recipeTitle": "Chicken Broccoli Soup",
     "category": "breakfast",
     "recipeImage": "chickenBroccoliSoup.png",
@@ -63,6 +70,7 @@
     "createdOn": "03/10/2024"
   },
   {
+    "id": "7",
     "recipeTitle": "Schrimp Paela",
     "category": "dinner",
     "recipeImage": "schrimpPaela.png",
@@ -72,6 +80,7 @@
     "createdOn": "04/06/2024"
   },
   {
+    "id": "8",
     "recipeTitle": "Energy Booster",
     "category": "breakfast",
     "recipeImage": "energyBooster.png",

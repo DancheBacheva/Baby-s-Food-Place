@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./FreshAndNew.module.css";
 import data from "../../data/recipes.json";
 import { Title } from "../Title/Title";
+import { RecipeDetailView } from "../RecipeDetailView/RecipeDetailView";
+import { useRecipeModal } from "../../hooks/useRecipeModal";
 
 export const FreshAndNew = () => {
+  const { isModalOpen, selectedRecipe, handleRecipeClick, closeModal } =
+    useRecipeModal();
+
   return (
     <>
       <Title title="Fresh & New" />
@@ -36,13 +41,18 @@ export const FreshAndNew = () => {
                   </div>
                 </div>
                 <div className={styles.detailsContainerRight}>
-                  <button>&gt;&gt;</button>
+                  <button onClick={() => handleRecipeClick(recipe.id)}>
+                    &gt;&gt;
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
+      {isModalOpen && selectedRecipe && (
+        <RecipeDetailView recipe={selectedRecipe} closeModal={closeModal} />
+      )}
     </>
   );
 };

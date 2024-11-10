@@ -6,3 +6,4 @@
 ![login](https://github.com/user-attachments/assets/46695fee-1720-4132-b900-fa3e17655981)
 ![createaccount](https://github.com/user-attachments/assets/e6bbcd0e-9ac4-4135-98f4-954ed3e4f3e5)
 ![myprofile](https://github.com/user-attachments/assets/c82f24ed-2aa1-4f4d-940d-2893ca50b775)
+![recipeDetails](https://github.com/user-attachments/assets/cbe78d78-623c-4f72-83db-80a15c6f5bd0)

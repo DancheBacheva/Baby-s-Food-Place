@@ -113,80 +113,82 @@ export const CreateAccountPage = () => {
           className={styles.containerCreateAccountRight}
           onSubmit={handleCreateAccount}
         >
-          <div className={styles.formLeft}>
-            <label htmlFor="firstName">First Name</label>
-            <br />
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              placeholder="John"
-              value={data.firstName}
-              onChange={handleChange}
-            />
-            {dataErrors.firstName && <p>{dataErrors.firstName}</p>}
-            <br />
-            <label htmlFor="email">Email</label>
-            <br />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="user@domain.com"
-              value={data.email}
-              onChange={handleChange}
-            />
-            {dataErrors.email && <p>{dataErrors.email}</p>}
-            <br />
-            <label htmlFor="password">Password </label>
-            <br />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="******"
-              value={data.password}
-              onChange={handleChange}
-            />
-            {dataErrors.password && <p>{dataErrors.password}</p>}
-            <br />
-          </div>
+          <div className={styles.formContainer}>
+            <div className={styles.formLeft}>
+              <label htmlFor="firstName">First Name</label>
+              <br />
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="John"
+                value={data.firstName}
+                onChange={handleChange}
+              />
+              {dataErrors.firstName && <p>{dataErrors.firstName}</p>}
+              <br />
+              <label htmlFor="email">Email</label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="user@domain.com"
+                value={data.email}
+                onChange={handleChange}
+              />
+              {dataErrors.email && <p>{dataErrors.email}</p>}
+              <br />
+              <label htmlFor="password">Password </label>
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="******"
+                value={data.password}
+                onChange={handleChange}
+              />
+              {dataErrors.password && <p>{dataErrors.password}</p>}
+              <br />
+            </div>
 
-          <div className={styles.formRight}>
-            <label htmlFor="lastName">Last Name</label>
-            <br />
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              placeholder="Smith"
-              value={data.lastName}
-              onChange={handleChange}
-            />
-            {dataErrors.lastName && <p>{dataErrors.lastName}</p>}
-            <br />
-            <label htmlFor="birthday">Birthday</label>
-            <br />
-            <input
-              type="date"
-              name="birthday"
-              id="birthday"
-              value={data.birthday}
-              onChange={handleChange}
-            />
-            <br />
-            <label htmlFor="repeatPassword">Repeat Password </label>
-            <br />
-            <input
-              type="password"
-              name="repeatPassword"
-              id="repeatPassword"
-              placeholder="******"
-              value={data.repeatPassword}
-              onChange={handleChange}
-            />
-            {dataErrors.repeatPassword && <p>{dataErrors.repeatPassword}</p>}
-            <br />
+            <div className={styles.formRight}>
+              <label htmlFor="lastName">Last Name</label>
+              <br />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Smith"
+                value={data.lastName}
+                onChange={handleChange}
+              />
+              {dataErrors.lastName && <p>{dataErrors.lastName}</p>}
+              <br />
+              <label htmlFor="birthday">Birthday</label>
+              <br />
+              <input
+                type="date"
+                name="birthday"
+                id="birthday"
+                value={data.birthday}
+                onChange={handleChange}
+              />
+              <br />
+              <label htmlFor="repeatPassword">Repeat Password </label>
+              <br />
+              <input
+                type="password"
+                name="repeatPassword"
+                id="repeatPassword"
+                placeholder="******"
+                value={data.repeatPassword}
+                onChange={handleChange}
+              />
+              {dataErrors.repeatPassword && <p>{dataErrors.repeatPassword}</p>}
+              <br />
+            </div>
           </div>
           <div>
             <button type="submit">CREATE ACCOUNT</button>

@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import styles from "./LoginPage.module.css";
 import { Title } from "../../components/Title/Title";
 import { Navigate, useNavigate } from "react-router-dom";
-import jwtDecode from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 import { UserContext } from "../../context/UserContext";
 
 export const LoginPage = () => {

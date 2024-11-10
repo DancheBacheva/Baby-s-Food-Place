@@ -41,7 +41,12 @@
 
 .containerCreateAccountRight {
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
+}
+
+.formContainer {
+  display: flex;
 }
 
 .formLeft {

@@ -2,7 +2,7 @@
   {
     "recipeTitle": "Homemade Pizza",
     "category": "lunch",
-    "recipeImage": "food/homemadePizza.png",
+    "recipeImage": "homemadePizza.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "45",
     "numberOfPeople": "4",
@@ -11,7 +11,7 @@
   {
     "recipeTitle": "Sea Spaghetti",
     "category": "dinner",
-    "recipeImage": "food/seaSpaghetti.png",
+    "recipeImage": "seaSpaghetti.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "30",
     "numberOfPeople": "4",
@@ -20,7 +20,7 @@
   {
     "recipeTitle": "Easy Tacos",
     "category": "brunch",
-    "recipeImage": "food/easyTacos.png",
+    "recipeImage": "easyTacos.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "30",
     "numberOfPeople": "4",
@@ -29,7 +29,7 @@
   {
     "recipeTitle": "Mac & bacon(and cheese)",
     "category": "lunch",
-    "recipeImage": "food/macAndCheese.png",
+    "recipeImage": "macAndCheese.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "45",
     "numberOfPeople": "4",
@@ -38,7 +38,7 @@
   {
     "recipeTitle": "Veggies Lasagna",
     "category": "dinner",
-    "recipeImage": "food/veggiesLasagna.png",
+    "recipeImage": "veggiesLasagna.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "45",
     "numberOfPeople": "4",
@@ -47,7 +47,7 @@
   {
     "recipeTitle": "Sweedish Meatballs",
     "category": "brunch",
-    "recipeImage": "food/sweedishMeatballs.png",
+    "recipeImage": "sweedishMeatballs.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "45",
     "numberOfPeople": "4",
@@ -56,7 +56,7 @@
   {
     "recipeTitle": "Chicken Broccoli Soup",
     "category": "breakfast",
-    "recipeImage": "food/chickenBroccoliSoup.png",
+    "recipeImage": "chickenBroccoliSoup.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "45",
     "numberOfPeople": "4",
@@ -65,7 +65,7 @@
   {
     "recipeTitle": "Schrimp Paela",
     "category": "dinner",
-    "recipeImage": "food/schrimpPaela.png",
+    "recipeImage": "schrimpPaela.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "45",
     "numberOfPeople": "4",
@@ -74,7 +74,7 @@
   {
     "recipeTitle": "Energy Booster",
     "category": "breakfast",
-    "recipeImage": "food/energyBooster.png",
+    "recipeImage": "energyBooster.png",
     "recipeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "preparationTime": "20",
     "numberOfPeople": "4",

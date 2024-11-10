@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
-import jwtDecode from "jwt-decode";
+import PropTypes from "prop-types";
+import { jwtDecode } from "jwt-decode";
 
 export const UserContext = createContext();
 
@@ -41,4 +42,8 @@ export const UserProvider = ({ children }) => {
       {children}
     </UserContext.Provider>
   );
+};
+
+UserProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };

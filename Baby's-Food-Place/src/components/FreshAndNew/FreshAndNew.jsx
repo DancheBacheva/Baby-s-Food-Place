@@ -11,7 +11,10 @@ export const FreshAndNew = () => {
         {data.slice(0, 3).map((recipe, i) => (
           <div key={i} className={styles.card}>
             <div className={styles.cardUp}>
-              <img src={recipe.recipeImage} alt="" />
+              <img
+                src={`/food/${recipe.recipeImage}`}
+                alt={recipe.recipeTitle}
+              />
               <div className={styles.foodCategory}>{recipe.category}</div>
             </div>
             <div className={styles.cardDown}>

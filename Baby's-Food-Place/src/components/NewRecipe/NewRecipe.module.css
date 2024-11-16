@@ -1,7 +1,10 @@
 .mainContainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-left: 90px;
+  margin-bottom: 30px;
+  margin-right: 80px;
 }
 
 .imageContainer {
